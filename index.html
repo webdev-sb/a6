@@ -9,44 +9,46 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
     <!-- Font Aweosome -->
-     <script src="https://kit.fontawesome.com/d5cda55964.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/d5cda55964.js" crossorigin="anonymous"></script> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Assignment 6</title>
 </head>
 
 <body>
 
     <!-- Navbar -->
-     <div class="navbar bg-base-100 shadow-sm">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-      </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Home</a></li>
-        <li><a>Products</a></li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
-      </ul>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a>Home</a></li>
+                    <li><a>Products</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">SwiftCart</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Products</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn "> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
     </div>
-    <a class="btn btn-ghost text-xl">SwiftCart</a>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-        <li><a>Products</a></li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <a class="btn ">Cart</a>
-    <!-- <i class="fa-solid fa-cart-shopping"></i> -->
-    
-  </div>
-</div>
 
 
 
@@ -68,6 +70,56 @@
 
     <!-- Features/Why Choose us -->
 
+    <div class="p-5">
+        <h2 class="flex items-center justify-center font-black text-3xl">Why Choose us</h2>
+        <h5 class="flex items-center justify-center font-normal text-lg">We provide the best shopping experience with top-notch services</h5>
+
+        <div class="grid grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 p-5 ">
+            <div class="card bg-base-100 w-96 shadow-sm col-span-1 ">
+                <div class="card-actions justify-first">
+                    <button class="btn btn-primary"><i class="fa-solid fa-truck-moving"></i></button>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Fast Delivery</h2>
+                    <p>Get your orders delivered to your doorstep quickly and efficiently
+                    </p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-96 shadow-sm col-span-1">
+                <div class="card-actions justify-first">
+                    <button class="btn btn-primary"><i class="fa-regular fa-headphones"></i></button>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">24/7 Support</h2>
+                    <p>Our support team is available around the clock to assist you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-96 shadow-sm col-span-1">
+                <div class="card-actions justify-first">
+                    <button class="btn btn-primary"><i class="fa-solid fa-shield"></i></button>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Secure Payment</h2>
+                    <p>Experience safe and secure transactions with our encrypted payment systems.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card bg-base-100 w-96 shadow-sm col-span-1">
+                <div class="card-actions justify-first">
+                    <button class="btn btn-primary"><i class="fa-solid fa-repeat"></i></button>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Easy Returns</h2>
+                    <p>Not satisfied? Return your products easily within 30 days!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Trending/ Top Rated -->
