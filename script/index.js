@@ -22,25 +22,20 @@ const displayData = (data) => {
         const card = document.createElement("div");
         // class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden
         card.innerHTML = `
-        <div ">
-        <figure>
-                <img src=${datum.image} alt="Shoes" />
-            </figure>
-            <span class="badge badge-xs badge-warning mt-2 ml-2">${datum.category}</span>
-            <div class="card-body">
-                <h2 class="card-title">${datum.title}</h2>
-                <span class="text-xl">${datum.price}/mo</span>
+        <img src=${datum.image} class="w-full h-40 object-cover rounded">
+                <h2 class="text-lg font-semibold mt-3">${datum.title}</h2>
+                <p class="text-gray-600 text-sm mt-1 badge badge-xs badge-warning mt-2 ml-2">${datum.category}</p>
+                <p class="text-indigo-600 font-bold mt-2">${datum.price}</p>
                 <div class="card-actions flex justify-between">
                     <button class="btn btn-primary">Details</button>
                     <button class="btn btn-primary">Buy Now</button>
                 </div>
-            </div>
-        </div>
         `;
         dataContainer.append(card);
     }
 
 }
+
 
 
 const displayData2 = (data) => {
